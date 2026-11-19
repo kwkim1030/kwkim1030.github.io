@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-[#f5f4ed] font-sans leading-relaxed text-[#172b27];
+  }
+
+  main h1 {
+    @apply mb-5 max-w-[15em] border-t-4 border-[#297358] pt-5 text-[clamp(2rem,6vw,3.5rem)] font-bold leading-tight tracking-tight;
+  }
+
+  main h1 + p {
+    @apply text-lg text-[#435950];
+  }
+
+  main h2 {
+    @apply mt-11 mb-2 text-xl font-semibold;
+  }
+
+  main p {
+    @apply mb-4;
+  }
+
+  main ul {
+    @apply mb-4 list-disc pl-6;
+  }
+
+  main ol {
+    @apply mb-4 list-decimal pl-6;
+  }
+
+  main a {
+    @apply text-[#17634a] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4;
+  }
+}
